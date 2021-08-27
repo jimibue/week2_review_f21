@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Patient.destroy_all
+
+p1 = Patient.create(first_name: 'James')
+p2 = Patient.create(first_name: 'Sally')
+
+p1.symptoms.create(description:'Road Rage')
+p1.symptoms.create(description:'Cancer?')
+p1.symptoms.create(description:'tooth ache')
+
+p2.symptoms.create(description:'hurt feelings')
+p2.symptoms.create(description:'sore throat')
+p2.symptoms.create(description:'headache')
+p2.symptoms.create(description:'can not poop')
