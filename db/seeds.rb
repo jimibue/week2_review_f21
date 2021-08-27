@@ -8,8 +8,8 @@
 
 Patient.destroy_all
 
-p1 = Patient.create(first_name: 'James')
-p2 = Patient.create(first_name: 'Sally')
+p1 = Patient.create(name: 'James')
+p2 = Patient.create(name: 'Sally')
 
 p1.symptoms.create(description:'Road Rage')
 p1.symptoms.create(description:'Cancer?')
